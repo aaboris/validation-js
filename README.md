@@ -8,8 +8,8 @@ Required jQuery.
  This attribute has 2 parameters.<br />
  Parameters write through the separator '|'.<br />
 
- 1.Type of element for validation ('input' or 'select').<br />
- 2.Mode for show error:<br />
+ 1. Type of element for validation ('input' or 'select').<br />
+ 2. Mode for show error:<br />
     'mode-1': Class 'error-validation' is added for 1.5 seconds.<br />
     'mode-2': Show error message.<br />
 
