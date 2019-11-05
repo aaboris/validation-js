@@ -34,6 +34,15 @@ Required jQuery.
  ``` bash
   Example attribute [data-input-check]: data-input-check="required|email".
  ```
-
- Example using all validation - index.html
  
+ If you want to add validation in your script, just add:
+  ``` js
+  if( validation() ) {...code}
+ ```
+ 
+To add automatic validation to the form, add the [data-validation-form] attribute:
+ ``` bash
+ <form action="#" data-validation-form> ... </form>
+ ```
+ 
+  Example using all validation - index.html
