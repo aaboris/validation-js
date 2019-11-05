@@ -2,7 +2,7 @@
 
 Required jQuery.
 
-##  Using:
+##  Using
 
  Required attribute [data-check] in the block for the validation element.<br />
  This attribute has 2 parameters.<br />
@@ -12,11 +12,14 @@ Required jQuery.
  2. Mode for show error:<br />
     'mode-1': Class 'error-validation' is added for 1.5 seconds.<br />
     'mode-2': Show error message.<br />
-
- Example attribute [data-check]: data-check="input|mode-1".
+    
+ ``` bash
+  Example attribute [data-check]: data-check="input|mode-1".
+ ```
+ 
 
  If the element for validation is an input, then we add attribute [data-input-check] to it.<br />
- Parameters for this attribute are optional.
+ Parameters for this attribute are optional.<br />
  Parameters write through the separator '|'.
  1. "required" - Field is required.
  2. "number" - Only integer.
@@ -28,7 +31,9 @@ Required jQuery.
  6. "phone" - Only phone.
  8. "password_confirmation" - For password confirmation.
 
- Example attribute [data-input-check]: data-input-check="required|email".
+ ``` bash
+  Example attribute [data-input-check]: data-input-check="required|email".
+ ```
 
  Example using all validation - index.html
  
