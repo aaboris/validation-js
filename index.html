@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Example Validation</title>
+    <link rel="stylesheet" href="validation.css">
+    <style>
+        * {
+           margin: 0 auto;
+        }
+        p {
+            text-align: center;
+            font-weight: 200;
+            font-size: 12px;
+        }
+        input, select, button {
+            width: 50%;
+            display: block;
+        }
+        form {
+            width: 400px;
+            position: absolute;
+            top: calc(50% - 200px);
+            left: calc(50% - 200px);
+        }
+    </style>
+</head>
+<body>
+
+<form action="#" data-validation-form>
+
+    <div class="input-group" data-check="input|mode-2">
+        <input data-input-check="required|num:4<>6" class="form-control square" placeholder="Enter num:4<>6" aria-label="Enter num:4<>6" name="number">
+    </div>
+
+    <br>
+
+    <div class="input-group" data-check="select|mode-2">
+        <select id="category" name="category" class="form-control">
+            <option value="" selected="" disabled="">Select</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+        </select>
+    </div>
+
+    <br>
+
+    <div class="input-group" data-check="input|mode-2" id="new_password_1">
+        <input data-input-check="required|min:6" class="form-control square" placeholder="New Password" aria-label="New Password" name="new_password">
+    </div>
+
+    <br>
+
+    <div class="input-group" data-check="input|mode-2" id="new_password_2">
+        <input data-input-check="required|min:6|password_confirmation" class="form-control square" placeholder="New Password" aria-label="New Password" name="new_password">
+    </div>
+
+    <br>
+
+    <button>Submit</button>
+</form>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="validation.js"></script>
+</body>
+</html>

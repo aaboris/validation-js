@@ -1,0 +1,12 @@
+/*
+   Validation CSS Style
+*/
+
+.error-validation {
+    border: 1px solid #a35454 !important;
+    transition: border ease 1s !important;
+}
+
+.validation-msg {
+    margin-top: 10px !important;
+}
