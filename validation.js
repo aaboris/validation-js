@@ -27,7 +27,7 @@
  1. "required" - Field is required.
  2. "number" - Only integer.
  3. "num:5<>12" - Only integer and length 5 - 12.
- 2. "mail" - Only email address.
+ 2. "email" - Only email address.
  3. "min:5" - Length min 5.
  4. "max:12" - Length max 12.
  5. "allow:[A-z]" - RegExp.
@@ -35,6 +35,12 @@
  8. "password_confirmation" - For password confirmation.
 
  Example attribute [data-input-check]: data-input-check="required|email".
+
+ If you want to add validation in your script, just add:
+ if( validation() ) {...code}
+
+ To add automatic validation to the form, add the [data-validation-form] attribute:
+ <form action="#" data-validation-form> ... </form>
 
  Example using all validation - index.html
 */

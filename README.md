@@ -24,7 +24,7 @@ Required jQuery.
  1. "required" - Field is required.
  2. "number" - Only integer.
  3. "num:5<>12" - Only integer and length 5 - 12.
- 2. "mail" - Only email address.
+ 2. "email" - Only email address.
  3. "min:5" - Length min 5.
  4. "max:12" - Length max 12.
  5. "allow:[A-z]" - RegExp.
